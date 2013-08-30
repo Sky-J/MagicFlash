@@ -43,19 +43,17 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="MagicFlash.ico">
+    <None Include="MagicFlash.ico">
       <Filter>资源文件</Filter>
-    </Image>
-    <Image Include="small.ico">
+    </None>
+    <None Include="small.ico">
       <Filter>资源文件</Filter>
-    </Image>
+    </None>
+    <None Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="MagicFlash.rc">
       <Filter>资源文件</Filter>
     </ResourceCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="ReadMe.txt" />
   </ItemGroup>
 </Project>
