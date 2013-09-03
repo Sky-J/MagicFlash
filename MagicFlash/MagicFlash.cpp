@@ -71,7 +71,6 @@ int APIENTRY _tWinMain(HINSTANCE hInstance,
 	delete g_flashWnd;
 
 	OleUninitialize();
-
 	return (int) msg.wParam;
 }
 

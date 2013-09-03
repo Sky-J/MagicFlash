@@ -1,0 +1,36 @@
+
+怎样在VS2010中打开vs2012的项目 
+
+
+
+VS2012中对C#的支持度非常好，不管是编写方便程度（不需要插件就能高亮代码及代码自动提示功能），还对MFC的一些功能优化很多。
+
+    我们可以修改两个工程文件来把VS2012的工程文件一直到VS2010中去。
+
+    首先当然是修改解决方案文件（.sln文件）。
+
+    使用记事本打开，把里面的
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+
+改成
+
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+
+    然后修改工程文件（.vcxproj文件）
+
+    使用记事本打开，把两个带有v110标签的语句删了，
+
+    <PlatformToolset>v110</PlatformToolset>
+
+现在就可以了。
+
+ 
+
+只修改第一个可以移植到VS2010中，但是无法编译，只有修改了第二个工程文件才可以。
+
+ 
+
+现在就可以在VS2012这个优秀的IDE上面写程序，最后通过上述方法移植到VS2010上去了。
